@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #aec2eb;
+}
+
+.spacing-vertical {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(108, 177, 220);
+}
+
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-group-half {
+    flex: 1 1 48%;
+}
+
+.form-group-full {
+    flex: 1 1 100%;
+}
+
+.task-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.task-card {
+    flex: 1 1 calc(50% - 1rem);
+}
+
+.high {
+    background-color: #f8d7da;
+}
+
+.medium {
+    background-color: #fff3cd;
+}
+
+.low {
+    background-color: #d1e7dd;
+}
+
+.completed-task {
+    background-color: #e9ecef !important;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .form-group-half,
+    .task-card {
+        flex: 1 1 100%;
+    }
+}
